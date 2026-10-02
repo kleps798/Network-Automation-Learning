@@ -23,3 +23,15 @@ print(type(number_of_interfaces))
 print(type(cpu_usage))
 print(type(device_status))
 print(f"{hostname} | IP: {ip_address} | Interfaces {number_of_interfaces} | CPU: {cpu_usage}% | Status: {device_status}")
+
+if device_status:
+    print("Device Status: UP")
+
+else:
+    print("Device Status: DOWN")  
+
+if cpu_usage < 70:
+    print("CPU Status: NORMAL")
+
+else
+    print("CPU Status: HIGH")  
